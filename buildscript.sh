@@ -1,7 +1,7 @@
 #!/bin/bash
 docker ps -a | grep 'assignment1314' > output
 chmod 777 output
-if [ -s output ]
+if [ -S output ]
 then
         sudo docker stop myimage
         sudo docker rm myimage
