@@ -9,9 +9,7 @@ then
         docker build -t assignment1314 .
         docker run --name myimage -d -p 8081:80 assignment1314
 else
-
         docker build -t assignment1314 .
         docker run --name myimage -d -p 8081:80 assignment1314
-
 fi
-rm -r output
+sudo rm -r output
